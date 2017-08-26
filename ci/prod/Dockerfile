@@ -1,7 +1,6 @@
 FROM php:7.0-zts-alpine
 
-RUN addgroup -S genisys && adduser -S -G genisys genisys
-
+RUN addgroup -S wilirodin && adduser -S -G wilirodin wilirodin
 RUN set -xe \
     && apk add --no-cache su-exec
 
@@ -21,10 +20,9 @@ RUN apk add --no-cache --virtual .genisys-rundeps ncurses
 
 ADD Genisys.phar /
 
-RUN mkdir -p /srv/genisys && chown genisys:genisys /srv/genisys
-VOLUME /srv/genisys
-WORKDIR /srv/genisys
-
+RUN mkdir -p /srv/wilirodin && chown wilirodin:wilirodin /srv/wilirodin
+VOLUME /srv/wilirodin
+WORKDIR /srv/wilirodin
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
 ENTRYPOINT ["docker-entrypoint.sh"]
