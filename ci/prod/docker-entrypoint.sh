@@ -6,8 +6,8 @@ fi
 
 # allow the container to be started with `--user`
 if [ "$1" = 'php' ] && [ "$2" = '/Genisys.phar' ] && [ "$(id -u)" = '0' ]; then
-	chown -R genisys .
-	exec su-exec genisys "$0" "$@"
+	chown -R wilirodin .
+	exec su-exec wilirodin "$0" "$@"
 fi
 
 exec "$@"
