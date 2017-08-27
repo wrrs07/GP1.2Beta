@@ -3,3 +3,8 @@
         "phpunit/phpunit": "6.2"
 	}
 }	
+"config": {
+    "platform": {
+        "php": "6.2"
+    }
+}
