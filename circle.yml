@@ -14,6 +14,6 @@ test:
     - tar -xf PHP7.tar.gz
     - wget https://github.com/WiliRodin/PocketMine-DevTools/releases/download/1.2.0.22/GenisisPro.zip
     - unzip GenisisPro.zip
-    - cp -r GenisisPro/ plugins/
+    - cp -r PocketMine-DevTools-master/ plugins/
     - bin/php7/bin/php ci.php
     - cp -R plugins/DevTools/* $CIRCLE_ARTIFACTS
