@@ -76,7 +76,7 @@ namespace pocketmine {
 	use pocketmine\utils\Utils;
 	use pocketmine\wizard\Installer;
 
-	const VERSION = "unsupported"; // Keep this until `mcpe-1.2-beta` branch is ready for merging
+	const VERSION = "BetterTogether Dev"; // Keep this until `mcpe-1.2-beta` branch is ready for merging
 	const API_VERSION = "3.0.1";
 	const CODENAME = "LlamaSpit";
 	const GENISYS_API_VERSION = '2.0.0';
