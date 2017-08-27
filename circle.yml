@@ -1,4 +1,8 @@
-    - git submodule sync
+machine:
+  php:
+    version: 7.0.4
+  test:
+	- git submodule sync
     - git submodule update --init
     - rm -rf plugins
     - rm -rf bin
