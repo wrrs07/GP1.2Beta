@@ -1,8 +1,5 @@
 {
-   "require": {
-        "phpunit/phpunit": "6.2"
-	},	
-  "platform": {
-        "php": "5.3.9"
-    }
+    "require": {
+        "phpunit/phpunit": "5.3.*"
+	}
 }
