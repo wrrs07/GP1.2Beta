@@ -1,8 +1,9 @@
 machine:
   php:
     version: 7.0.4
-  test:
-	- git submodule sync
+test:
+  post:
+    - git submodule sync
     - git submodule update --init
     - rm -rf plugins
     - rm -rf bin
@@ -16,4 +17,3 @@ machine:
     - cp -r PocketMine-DevTools-master/ plugins/
     - bin/php7/bin/php ci.php
     - cp -R plugins/DevTools/* $CIRCLE_ARTIFACTS
-    
